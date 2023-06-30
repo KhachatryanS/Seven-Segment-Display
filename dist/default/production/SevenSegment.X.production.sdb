@@ -17,11 +17,13 @@ SPI1_DEFAULT 0
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"9 D:\Users\susanna.edes11\Desktop\SevenSegment.X\main.c
-[v _loop loop `(v  1 e 1 0 ]
-"18
+"10 D:\Users\susanna.edes11\Desktop\SevenSegment.X\main.c
 [v _display_data display_data `(uc  1 e 1 0 ]
-"44
+"35
+[v _display_leds display_leds `(uc  1 e 1 0 ]
+"57
+[v _loop loop `(v  1 e 1 0 ]
+"80
 [v _main main `(v  1 e 1 0 ]
 "66 D:\Users\susanna.edes11\Desktop\SevenSegment.X\mcc_generated_files/eusart.c
 [v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
@@ -190,15 +192,15 @@ SPI1_DEFAULT 0
 [v _LATA LATA `VEuc  1 e 1 @268 ]
 "2144
 [v _LATB LATB `VEuc  1 e 1 @269 ]
-[s S622 . 1 `uc 1 . 1 0 :4:0 
+[s S629 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 LATB4 1 0 :1:4 
 `uc 1 LATB5 1 0 :1:5 
 `uc 1 LATB6 1 0 :1:6 
 `uc 1 LATB7 1 0 :1:7 
 ]
 "2158
-[u S628 . 1 `S622 1 . 1 0 ]
-[v _LATBbits LATBbits `VES628  1 e 1 @269 ]
+[u S635 . 1 `S629 1 . 1 0 ]
+[v _LATBbits LATBbits `VES635  1 e 1 @269 ]
 "2183
 [v _LATC LATC `VEuc  1 e 1 @270 ]
 "2517
@@ -289,6 +291,8 @@ SPI1_DEFAULT 0
 [v _DISPLAY_T DISPLAY_T `[3]uc  1 e 3 0 ]
 "7
 [v _DISPLAY_DATA DISPLAY_DATA `[10]uc  1 e 10 0 ]
+"56
+[v _i i `uc  1 e 1 0 ]
 [s S360 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
@@ -310,23 +314,10 @@ SPI1_DEFAULT 0
 [v _timer1ReloadVal timer1ReloadVal `VEus  1 e 2 0 ]
 "58
 [v _TMR1_InterruptHandler TMR1_InterruptHandler `*.37(v  1 e 2 0 ]
-"44 D:\Users\susanna.edes11\Desktop\SevenSegment.X\main.c
+"80 D:\Users\susanna.edes11\Desktop\SevenSegment.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"64
-} 0
-"18
-[v _display_data display_data `(uc  1 e 1 0 ]
-{
-[v display_data@SEGMENT SEGMENT `uc  1 a 1 wreg ]
-"28
-[v display_data@tmp tmp `uc  1 a 1 2 ]
-"18
-[v display_data@SEGMENT SEGMENT `uc  1 a 1 wreg ]
-[v display_data@NUMBER NUMBER `uc  1 p 1 0 ]
-"20
-[v display_data@SEGMENT SEGMENT `uc  1 a 1 3 ]
-"37
+"93
 } 0
 "50 D:\Users\susanna.edes11\Desktop\SevenSegment.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
@@ -413,19 +404,45 @@ SPI1_DEFAULT 0
 {
 "185
 } 0
-"9 D:\Users\susanna.edes11\Desktop\SevenSegment.X\main.c
+"57 D:\Users\susanna.edes11\Desktop\SevenSegment.X\main.c
 [v _loop loop `(v  1 e 1 0 ]
 {
-"16
+"78
+} 0
+"35
+[v _display_leds display_leds `(uc  1 e 1 0 ]
+{
+[v display_leds@LED_NUMBER LED_NUMBER `uc  1 a 1 wreg ]
+"38
+[v display_leds@tmp tmp `uc  1 a 1 11 ]
+"35
+[v display_leds@LED_NUMBER LED_NUMBER `uc  1 a 1 wreg ]
+[v display_leds@VALUE VALUE `uc  1 p 1 8 ]
+"37
+[v display_leds@LED_NUMBER LED_NUMBER `uc  1 a 1 12 ]
+"55
+} 0
+"10
+[v _display_data display_data `(uc  1 e 1 0 ]
+{
+[v display_data@SEGMENT SEGMENT `uc  1 a 1 wreg ]
+"22
+[v display_data@tmp tmp `uc  1 a 1 10 ]
+"10
+[v display_data@SEGMENT SEGMENT `uc  1 a 1 wreg ]
+[v display_data@NUMBER NUMBER `uc  1 p 1 8 ]
+"13
+[v display_data@SEGMENT SEGMENT `uc  1 a 1 11 ]
+"33
 } 0
 "4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\memcpy.c
 [v _memcpy memcpy `(*.4v  1 e 2 0 ]
 {
 [v memcpy@d1 d1 `*.4v  1 a 1 wreg ]
 "8
-[v memcpy@s s `*.4DCuc  1 a 1 7 ]
+[v memcpy@s s `*.4DCuc  1 a 1 6 ]
 "7
-[v memcpy@d d `*.4uc  1 a 1 6 ]
+[v memcpy@d d `*.4uc  1 a 1 5 ]
 "9
 [v memcpy@tmp tmp `uc  1 a 1 4 ]
 "4
@@ -433,7 +450,7 @@ SPI1_DEFAULT 0
 [v memcpy@s1 s1 `*.4DCv  1 p 1 0 ]
 [v memcpy@n n `ui  1 p 2 1 ]
 "11
-[v memcpy@d1 d1 `*.4v  1 a 1 5 ]
+[v memcpy@d1 d1 `*.4v  1 a 1 7 ]
 "18
 } 0
 "100 D:\Users\susanna.edes11\Desktop\SevenSegment.X\mcc_generated_files/spi1.c

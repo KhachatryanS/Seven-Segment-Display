@@ -3380,7 +3380,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR1" name="CallbackFuncRate"/>
-         <value>0.05</value>
+         <value>0.001</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR1" name="ExternalFrequency"/>
@@ -3420,7 +3420,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR1" name="reloadValue"/>
-         <value>15536</value>
+         <value>64536</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR1" name="tckiPin"/>
@@ -3432,15 +3432,15 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR1" name="timerClockActual"/>
-         <value>20</value>
+         <value>1000</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR1" name="timerPeriod"/>
-         <value>0.05</value>
+         <value>0.001</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR1" name="timerPeriodActual"/>
-         <value>0.05</value>
+         <value>0.001</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="TMR1" name="timerPeriodMax"/>
@@ -3584,11 +3584,11 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="TMR1" registerAlias="TMRH"/>
-         <value>60</value>
+         <value>252</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="TMR1" registerAlias="TMRL"/>
-         <value>176</value>
+         <value>24</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="TMR1" registerAlias="TCON" settingAlias="TCKPS"/>
@@ -3652,11 +3652,11 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="TMR1" registerAlias="TMRH" settingAlias="TMRH"/>
-         <value>60</value>
+         <value>252</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="TMR1" registerAlias="TMRI" settingAlias="enable"/>
-         <value>disabled</value>
+         <value>enabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="TMR1" registerAlias="TMRI" settingAlias="flag"/>
@@ -3668,7 +3668,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="TMR1" registerAlias="TMRL" settingAlias="TMRL"/>
-         <value>176</value>
+         <value>24</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="WDT" name="wdtPeriod"/>
@@ -3773,16 +3773,16 @@
    </tokenMap>
    <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
+         <file>mcc_generated_files\interrupt_manager.h</file>
+         <hash>41a4fa54bbaf6e3f37e39ec1258c28b9924adaa4be9a12e6dc158f9a969acf00</hash>
+      </entry>
+      <entry>
          <file>mcc_generated_files\mcc.h</file>
          <hash>fda9e67d665d821a04cf1c02a54e6c4af046638e34f6b4a6dfa014f443870c24</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\device_config.h</file>
          <hash>caa0eff9ba4a867d019a36661f09bf1a4340041468cd87d0383527d3aaea3e0b</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\interrupt_manager.h</file>
-         <hash>41a4fa54bbaf6e3f37e39ec1258c28b9924adaa4be9a12e6dc158f9a969acf00</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\tmr1.h</file>
@@ -3797,40 +3797,40 @@
          <hash>804eb8e397a54f2210953f1aeb8e365c1bee958c1f88c7550fa9a9ea01afaa43</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\spi1.h</file>
-         <hash>67481343a1474591334d81013c6218ffab81a744c24d27bac3e6a5ca267943f0</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\pin_manager.h</file>
          <hash>cebde1c2bc4f3ad29800aae8216cc7c950f486b8d4a80653c588105f5e250676</hash>
       </entry>
       <entry>
+         <file>mcc_generated_files\spi1.h</file>
+         <hash>67481343a1474591334d81013c6218ffab81a744c24d27bac3e6a5ca267943f0</hash>
+      </entry>
+      <entry>
          <file>mcc_generated_files\tmr1.c</file>
-         <hash>1730dcc14db54f1f3b532f2d7e39ab024577f3ec9cb83c9078d4ffcd0b4e8b77</hash>
+         <hash>4a1c27197b17520e7a9cf6b7e9669f6fcd32873cbc8ded502bb3d47f74063c32</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\eusart.c</file>
          <hash>bc526d49156726dea4bc8c1366af3a1f297268da6b4cea822b07a0a02a480018</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\spi1.c</file>
-         <hash>19ed7cc889f86732f34a41895fc25be368156f8b6ff3ff1f2de837c395237967</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\pin_manager.c</file>
          <hash>ce777857d8457040849c2c6644cb0db4017b99fc7e8a527b4dfb7c11a04febc1</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\spi1.c</file>
+         <hash>19ed7cc889f86732f34a41895fc25be368156f8b6ff3ff1f2de837c395237967</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\eusart.h</file>
          <hash>dc8cdff8d7e4be86085e995a42d4bc2e7b940eb0d9959fc07a134fad31a50510</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\mcc.c</file>
-         <hash>87ef945c1b78a1e0cb74a8b3468f0f250b8cbbff2b0d22fd3d8316e398293acf</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\interrupt_manager.c</file>
          <hash>acac690ced3e0432046c61a20a266fedb17e7b37b21cf3b76126ca4acc928af6</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\mcc.c</file>
+         <hash>87ef945c1b78a1e0cb74a8b3468f0f250b8cbbff2b0d22fd3d8316e398293acf</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>
